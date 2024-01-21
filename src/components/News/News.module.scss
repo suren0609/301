@@ -1,0 +1,88 @@
+.News {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 60px 0;
+  margin-bottom: 50px;
+
+  .newsBlock {
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .iconNTitle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      padding: 50px 10px;
+
+      @media (max-width: 761px) {
+        svg {
+          width: 30px;
+        }
+      }
+
+      h2 {
+        color: #151c26;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @media (max-width: 761px) {
+          font-size: 18px;
+        }
+      }
+    }
+    .slider {
+      width: 100%;
+      height: 900px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0;
+
+      @media (max-width: 1041px) {
+        height: 500px;
+      }
+
+      @media (max-width: 425px) {
+        height: 308px;
+      }
+    }
+    .btn {
+      width: 361px;
+      height: 74px;
+      border-radius: 46px;
+      border: 1px solid #dd264e;
+      background: #dd264e;
+      box-shadow: -21px 16px 38px 0px rgba(191, 9, 48, 0.21);
+      color: #fff;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        background: transparent;
+        border: 1px solid #dd264e;
+        color: #dd264e;
+      }
+
+      @media (max-width: 1041px) {
+        width: 261px;
+        height: 54px;
+      }
+    }
+  }
+}

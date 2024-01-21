@@ -1,0 +1,188 @@
+.Contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../assets/Group\ 6007.png"), #fff;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  padding: 65px;
+  margin-bottom: 50px;
+
+  @media (max-width: 761px) {
+    padding: 40px 10px;
+  }
+
+  .container {
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .iconNTitle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      margin-bottom: 100px;
+
+      @media (max-width: 761px) {
+        svg {
+          width: 30px;
+        }
+      }
+
+      h2 {
+        color: #151c26;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @media (max-width: 761px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-left: 60px;
+
+      @media (max-width: 959px) {
+        flex-direction: column;
+      }
+
+      @media (max-width: 481px) {
+        padding: 0;
+        align-items: center;
+      }
+
+      .names {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-right: 59px;
+
+        @media (max-width: 761px) {
+          margin-right: unset;
+        }
+
+        input {
+          width: 350px;
+          height: 50px;
+          border-radius: 46px;
+          border: 2px solid rgba(0, 0, 0, 0.14);
+          box-shadow: -20px 8px 20px 0px rgba(21, 29, 39, 0.06);
+          outline: none;
+          padding: 10px 20px;
+          margin-bottom: 20px;
+          color: #303030;
+          text-align: justify;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 31px;
+
+          @media (max-width: 370px) {
+            width: 270px;
+            font-size: 14px;
+          }
+
+          &::placeholder {
+            color: #303030;
+            text-align: justify;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 31px;
+            @media (max-width: 370px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .messageBtn {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        @media (max-width: 959px) {
+          align-items: center;
+        }
+
+        textarea {
+          width: 480px;
+          height: 122px;
+          border-radius: 10px;
+          border: 2px solid rgba(0, 0, 0, 0.14);
+          box-shadow: -20px 8px 20px 0px rgba(21, 29, 39, 0.06);
+          outline: none;
+          padding: 10px 20px;
+          resize: none;
+          color: #303030;
+          text-align: justify;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 31px;
+
+          @media (max-width: 959px) {
+            width: 350px;
+          }
+
+          @media (max-width: 370px) {
+            width: 270px;
+            font-size: 14px;
+          }
+
+          &::placeholder {
+            color: #303030;
+            text-align: justify;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 31px;
+
+            @media (max-width: 370px) {
+              font-size: 14px;
+            }
+          }
+        }
+        .send {
+          width: 245px;
+          height: 50px;
+          border-radius: 46px;
+          background: #dd264e;
+          box-shadow: -21px 16px 38px 0px rgba(191, 9, 48, 0.21);
+          color: #fff;
+          font-family: "Noto Sans";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          border: none;
+          margin-top: 30px;
+          transition: all 0.1s ease-in-out;
+
+          &:hover {
+            background: transparent;
+            border: 1px solid #dd264e;
+            color: #dd264e;
+          }
+        }
+      }
+    }
+  }
+}

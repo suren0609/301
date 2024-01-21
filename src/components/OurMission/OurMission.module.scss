@@ -1,0 +1,130 @@
+.OurMission {
+  margin: 50px 0;
+  width: 100%;
+  height: 601px;
+
+  background: url("../../assets/Group\ 5960\ \(1\).png"), #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 857px) {
+    background: unset;
+    background: url("../../assets/Group\ 5969.png"),
+      url("../../assets/missionBG.png"), #fff;
+    background-repeat: repeat-x, no-repeat;
+    background-position: center 0, center;
+
+    height: unset;
+    padding: 50px;
+  }
+
+  .missionBlock {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+
+    @media (max-width: 400px) {
+      svg {
+        display: none;
+      }
+    }
+
+    .txtNBtn {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      @media (max-width: 857px) {
+        align-items: center;
+      }
+
+      .titleNTxt {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 1095px;
+        margin-bottom: 50px;
+
+        h2 {
+          color: #151c26;
+          margin: 0;
+          font-family: Montserrat;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+
+          @media (max-width: 761px) {
+            font-size: 18px;
+          }
+        }
+
+        h4 {
+          color: #151c26;
+          font-family: Montserrat;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 31px;
+          margin: 10px 0;
+
+          @media (max-width: 761px) {
+            font-size: 16px;
+          }
+
+          span {
+            color: #dd264e;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 31px;
+            text-decoration-line: underline;
+
+            @media (max-width: 761px) {
+              font-size: 16px;
+            }
+          }
+        }
+
+        p {
+          margin: 0;
+          color: #313a4b;
+          text-align: justify;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 31px;
+
+          @media (max-width: 761px) {
+            font-size: 14px;
+          }
+        }
+      }
+      button {
+        width: 245px;
+        height: 50px;
+        border-radius: 46px;
+        border: 2px solid #dd264e;
+        color: #313a4b;
+        font-family: "Noto Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: transparent;
+
+        &:hover {
+          background: #dd264e;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

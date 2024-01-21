@@ -1,0 +1,74 @@
+.WhyImportant {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 780px;
+  background: url("../../assets/Group\ 5897.png"),
+    url("../../assets/Group\ 5962.png"), #fff;
+  background-repeat: no-repeat;
+  background-position: -100% 0%, center, 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 857px) {
+    background: unset;
+    background: url("../../assets/Group\ 5974.png"),
+      url("../../assets/whyBg.png"), #fff;
+    background-repeat: repeat-x, no-repeat;
+    background-position: center 0, center;
+
+    height: unset;
+    padding: 50px;
+  }
+
+  .WhyImportantBlock {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+
+    @media (max-width: 500px) {
+      svg {
+        display: none;
+      }
+    }
+
+    .titleNTxt {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      max-width: 1095px;
+      margin-bottom: 50px;
+
+      h2 {
+        color: #151c26;
+        margin: 0;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @media (max-width: 761px) {
+          font-size: 18px;
+        }
+      }
+
+      p {
+        margin: 0;
+        color: #313a4b;
+        text-align: justify;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 31px;
+
+        @media (max-width: 761px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

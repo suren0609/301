@@ -1,0 +1,58 @@
+.Carrousel {
+  position: relative;
+
+  .left {
+    position: absolute;
+    left: -300px;
+    top: 30%;
+    z-index: 1000;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 1041px) {
+      left: -150px;
+    }
+
+    @media (max-width: 437px) {
+      top: 40%;
+      left: -100px;
+    }
+
+    svg {
+      @media (max-width: 1041px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .right {
+    position: absolute;
+    right: -300px;
+    top: 30%;
+    z-index: 1000;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 1041px) {
+      right: -150px;
+    }
+    @media (max-width: 437px) {
+      top: 40%;
+      right: -100px;
+    }
+
+    svg {
+      @media (max-width: 1041px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
